@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FriendshipVerse</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- MUSIC -->
+    <audio id="bgMusic" loop>
+        <source src="music/memories.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- HERO SECTION -->
+
+    <section class="hero">
+
+        <div class="stars"></div>
+
+        <div class="hero-content">
+
+            <h1>
+                To The Friend Who Became Family 💙
+            </h1>
+
+            <p>
+                Not every friend becomes family.
+                Not every memory becomes a story.
+                But ours did.
+            </p>
+
+            <button onclick="startJourney()">
+                🚂 Begin The Journey
+            </button>
+
+        </div>
+
+        <div class="scroll-indicator">
+            ⬇
+        </div>
+
+    </section>
+
+    <!-- FRIENDSHIP JOURNEY -->
+
+    <section id="journey" class="journey">
+
+        <h2>🚂 Our Friendship Journey</h2>
+
+        <div class="track-container">
+
+            <div class="track-line"></div>
+
+            <div id="train" class="train">
+                🚂
+            </div>
+
+            <!-- Station 1 -->
+
+            <div class="station left">
+                <div class="station-card">
+                    <h3>⭐ First Hello</h3>
+                    <p>The day strangers became friends.</p>
+                </div>
+            </div>
+
+            <!-- Station 2 -->
+
+            <div class="station right">
+                <div class="station-card">
+                    <h3>☕ Endless Talks</h3>
+                    <p>Conversations that never seemed to end.</p>
+                </div>
+            </div>
+
+            <!-- Station 3 -->
+
+            <div class="station left">
+                <div class="station-card">
+                    <h3>🌍 Adventures</h3>
+                    <p>Exploring places and creating memories.</p>
+                </div>
+            </div>
+
+            <!-- Station 4 -->
+
+            <div class="station right">
+                <div class="station-card">
+                    <h3>💪 Tough Times</h3>
+                    <p>Standing beside each other when it mattered.</p>
+                </div>
+            </div>
+
+            <!-- Station 5 -->
+
+            <div class="station left">
+                <div class="station-card">
+                    <h3>🏆 Today</h3>
+                    <p>Still writing new chapters together.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- MEMORY WALL -->
+
+<section class="memory-wall">
+
+    <h2>📸 Memory Stations</h2>
+
+    <div class="memory-row">
+
+        <div class="polaroid">
+            <div class="clip">📌</div>
+            <img src="images/memory1.jpg" onclick="openImage(this.src)">
+            <p>Where It All Started ✨</p>
+        </div>
+
+        <div class="polaroid">
+            <div class="clip">📌</div>
+            <img src="images/memory2.jpg" onclick="openImage(this.src)">
+            <p>One Of Our Best Days 🌍</p>
+        </div>
+
+        <div class="polaroid">
+            <div class="clip">📌</div>
+            <img src="images/memory3.jpg" onclick="openImage(this.src)">
+            <p>Unforgettable Laughs 😂</p>
+        </div>
+
+    </div>
+
+    <div class="memory-row">
+
+        <div class="polaroid">
+            <div class="clip">📌</div>
+            <img src="images/memory4.jpg" onclick="openImage(this.src)">
+            <p>Late Night Talks 🌙</p>
+        </div>
+
+        <div class="polaroid">
+            <div class="clip">📌</div>
+            <img src="images/memory5.jpg" onclick="openImage(this.src)">
+            <p>Adventure Together 🚂</p>
+        </div>
+
+        <div class="polaroid">
+            <div class="clip">📌</div>
+            <img src="images/memory6.jpg" onclick="openImage(this.src)">
+            <p>Memories Forever 💙</p>
+        </div>
+
+    </div>
+
+    <div class="memory-row">
+
+        <div class="polaroid">
+            <div class="clip">📌</div>
+            <img src="images/memory7.jpg" onclick="openImage(this.src)">
+            <p>Unexpected Moments ⭐</p>
+        </div>
+
+        <div class="polaroid">
+            <div class="clip">📌</div>
+            <img src="images/memory8.jpg" onclick="openImage(this.src)">
+            <p>Our Story Continues 📖</p>
+        </div>
+
+        <div class="polaroid">
+            <div class="clip">📌</div>
+            <img src="images/memory9.jpg" onclick="openImage(this.src)">
+            <p>Forever Friends 💙</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FRIENDSHIP STATS -->
+
+<section class="friendship-stats">
+
+    <h2>📊 Friendship By Numbers</h2>
+
+    <div class="stats-grid">
+
+        <div class="stat">
+            <h3>5+</h3>
+            <p>Years Together</p>
+        </div>
+
+        <div class="stat">
+            <h3>1000+</h3>
+            <p>Conversations</p>
+        </div>
+
+        <div class="stat">
+            <h3>50+</h3>
+            <p>Memories</p>
+        </div>
+
+        <div class="stat">
+            <h3>∞</h3>
+            <p>Support</p>
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- INSIDE JOKES -->
+
+    <section class="jokes">
+
+        <h2>Inside Jokes 😂</h2>
+
+        <div class="notes">
+
+            <div class="note">
+                Remember that tea shop? ☕
+            </div>
+
+            <div class="note">
+                The impossible road trip 🚗
+            </div>
+
+            <div class="note">
+                Our legendary late-night talks 🌙
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- LETTER SECTION -->
+
+    <section class="letter-section">
+
+        <div class="envelope-container" onclick="openLetter()">
+
+            <div class="envelope-top"></div>
+
+            <div class="envelope-body"></div>
+
+            <p>Open Secret Letter 💌</p>
+
+        </div>
+
+    </section>
+
+    <!-- FINAL DESTINATION -->
+
+    <section class="final-destination">
+
+        <h2>🏁 Final Destination</h2>
+
+        <p>
+            Some friendships don't need daily conversations.
+            They survive time, distance and every challenge life brings.
+        </p>
+
+        <p>
+            Thank you for being part of my journey.
+        </p>
+
+        <h3>
+            "A good friend knows all your stories.
+            A best friend helped you create them." 💙
+        </h3>
+
+        <button onclick="celebrateFriendship()">
+            💙 Forever Friends
+        </button>
+
+    </section>
+
+    <!-- LETTER POPUP -->
+
+    <div id="letterPopup" class="letter-popup">
+
+        <div class="letter-box">
+
+            <span class="close" onclick="closeLetter()">✖</span>
+
+            <h2>Dear Best Friend 💙</h2>
+
+            <p>
+                Some people enter our lives and leave memories.
+                You became part of the story itself.
+                Thank you for every laugh, support and unforgettable moment.
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- FULLSCREEN IMAGE -->
+
+    <div id="imageModal" class="image-modal">
+
+        <span onclick="closeImage()">✖</span>
+
+        <img id="fullImage">
+
+    </div>
+
+    <canvas id="confetti"></canvas>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
